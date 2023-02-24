@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <center>
+      <form
+        id="form"
+        action=""
+        method="GET"
+        name="myForm"
+        onsubmit="return false"
+      >
+        <h1>Form</h1>
+        <label for="fullName">Full Name</label>
+        <br />
+        <input
+          id="fullName"
+          type="text"
+          name="fullName"
+          placeholder="full name"
+          required
+        />
+        <p id="fullNameValidation"></p>
+        <br />
+        <label for="emailAddress">Email Address</label>
+        <br />
+        <input
+          id="email"
+          type="email"
+          name="Email"
+          placeholder="email"
+          required
+        />
+        <p id="emailValidation"></p>
+        <br />
+
+        <p id="options">How would you like to contact me?</p>
+        <input type="radio" name="Contact" value="email" required />
+        <label for="email">Email</label>
+        <br />
+        <input type="radio" name="Contact" required />
+        <label for="call">Call</label>
+        <br />
+        <input type="radio" name="Contact" />
+        <label for="social-media">Social media</label>
+        <br />
+        <button type="submit" onClick="validateForm(this.form)" id="submitForm">
+          Submit
+        </button>
+        <p id="message"></p>
+      </form>
+    </center>
+    <script src="form.js"></script>
+  </body>
+</html>

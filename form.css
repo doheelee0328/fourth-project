@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', sans-serif;
+  background-image: url('https://img.freepik.com/free-photo/closeup-concrete-wall-texture-background_1017-24490.jpg?w=2000');
+}
+
+form {
+  height: 560px;
+  width: 50%;
+  background-image: url('data:image/jpeg;base64,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');
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p {
+  margin: 0;
+}
+
+#message {
+  font-size: 30px;
+}
+
+.invalidMessage {
+  color: red;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.validMessage {
+  color: #313a3b;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 80px;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: #cdd1d1;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d9dede;
+}
